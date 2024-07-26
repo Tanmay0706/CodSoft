@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Number_Game {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Random ran = new Random();
+        Random random = new Random();
         String plagain;
 
         do {
