@@ -1,18 +1,18 @@
 class BankAccount {
-    private double bal;
+    private double bala;
     
     public BankAccount(double initialBalance) {
-        this.bal = initialBalance;
+        this.bala = initialBalance;
     }
     
     public double getBalance() {
-        return bal;
+        return bala;
     }
     
     public void deposit(double amount) {
         if (amount > 0) {
             bal += amount;
-            System.out.println("Deposit successful. New balance: " + bal);
+            System.out.println("Deposit successful. New balance: " + bala);
         } else {
             System.out.println("Invalid deposit amount.");
         }
@@ -20,8 +20,8 @@ class BankAccount {
     
     public void withdraw(double amount) {
         if (amount > 0 && amount <= bal) {
-            bal -= amount;
-            System.out.println("Withdrawal successful. New balance: " + bal);
+            bala -= amount;
+            System.out.println("Withdrawal successful. New balance: " + bala);
         } else {
             System.out.println("Invalid withdrawal amount or insufficient balance.");
         }
